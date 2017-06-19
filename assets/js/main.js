@@ -33,3 +33,4 @@ function initMap() {
 		alert("Tenemos un problema con encontrar tu ubicación");
 	}
 };
+
