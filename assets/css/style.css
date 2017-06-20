@@ -26,6 +26,8 @@ button:hover, button:focus{
 	outline: 0;
 }
 
-input{
-    margin: 23px;
+input {
+    margin: 17px;
+    width: 170px;
+    padding: 5px;
 }

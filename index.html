@@ -12,18 +12,18 @@
 	<body>
 		<section>
 			<div class="row">
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 col-xs-12 text-center">
 					<button id="encuentrame">Encuéntrame <i class="fa fa-map-marker" aria-hidden="true"></i></button>
 				</div>
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 col-xs-12 text-center">
 					<label for="text">Origen</label>
-					<input type="text">
+					<input type="text" id='origen' placeholder="Introduce una ubicación">
 				</div>
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 col-xs-12 text-center">
 					<label for="text">Destino</label>
-					<input type="text">
+					<input type="text" id='destino' placeholder="Introduce una ubicación">
 				</div>
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 col-xs-12">
 					<button id="ruta">Ruta <i class="fa fa-bicycle" aria-hidden="true"></i></button>
 				</div>
 			</div>
@@ -33,7 +33,9 @@
 				</div>
 			</div>
 		</section>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6ZKTi_-wcmmNQbdpbC7RxFVtfaqP62TU&callback=initMap" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6ZKTi_-wcmmNQbdpbC7RxFVtfaqP62TU&callback=initMap&libraries=places,geometry" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
